@@ -10,12 +10,14 @@ public class C {
         for (int i = 0; i < list.length; i++) {
             list[i] = scan.nextInt();
             box = list[0];
+            System.out.println(box);
             if(i != 0) {
                 if(box > list[i]) {
-                    box = list[i-1];
                     System.out.println(box);
-                    count += box - list[i];
+                    count = count + box - list[i];
                     System.out.println(count);
+                } else {
+                    box = list[i];
                 }
             }
         }
