@@ -1,0 +1,9 @@
+1,文字列を配列に入れる方法
+
+String word = "あいうえお";
+String[] wordList = word.split("");
+
+2,long型・double型を超えた型
+
+java.mathのBigIntegerとBigDecimal
+
