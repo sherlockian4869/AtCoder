@@ -7,3 +7,6 @@ String[] wordList = word.split("");
 
 java.mathのBigIntegerとBigDecimal
 
+3,三項演算子
+
+<条件式> ? <TRUE時の値> : <FALSE時の値>
