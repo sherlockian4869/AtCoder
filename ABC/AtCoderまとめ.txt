@@ -13,3 +13,14 @@ java.mathのBigIntegerとBigDecimal
 
 4,BigDecimalの切り上げ・切り捨て・四捨五入
 参考資料:https://www.sukerou.com/2018/09/java9bigdecimal.html
+
+5,10進数→2進数変換
+
+do {
+    if (0 == (num % 2)) { 
+        bin = "0" + bin;
+    } else {
+        bin = "1" + bin;
+    }
+    num = num / 2;
+} while(0 < num);
