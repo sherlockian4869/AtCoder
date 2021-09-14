@@ -10,3 +10,6 @@ java.mathのBigIntegerとBigDecimal
 3,三項演算子
 
 <条件式> ? <TRUE時の値> : <FALSE時の値>
+
+4,BigDecimalの切り上げ・切り捨て・四捨五入
+参考資料:https://www.sukerou.com/2018/09/java9bigdecimal.html

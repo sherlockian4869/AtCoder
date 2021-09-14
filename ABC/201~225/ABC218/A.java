@@ -15,3 +15,21 @@ public class A {
         scan.close();
     }
 }
+
+// 別パターン
+// import java.util.Scanner;
+// public class A {
+//     public static void main(String[] args) throws Exception {
+//         Scanner scan = new Scanner(System.in);
+//         int n = scan.nextInt() - 1;
+//         String s = scan.next();
+//         scan.close();
+//         char a = s.charAt(n);
+
+//         if(a == 'o') {
+//             System.out.println("y");
+//         } else {
+//             System.out.println("n");
+//         }
+//     }
+// }
