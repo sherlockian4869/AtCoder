@@ -1,21 +1,23 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
-import java.util.Arrays;
+
+import javax.sound.midi.Soundbank;
 public class B {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] list = new int[n];
-        int[] box = new int[n];
-        for (int i = 0; i < list.length; i++) {
-            list[i] = sc.nextInt();
+        Integer[] number = new Integer[n];
+        Integer[] sortNumber = new Integer[n];
+        for (int i = 0; i < number.length; i++) {
+            number[i] = sc.nextInt();
+            sortNumber[i] = number[i];
         }
-        box = list;
-        Arrays.toString(box);
-        Arrays.toString(list);
-        Arrays.sort(list);
-        // System.out.println(box.indexOf(list[list.length -2]));
+        Arrays.sort(sortNumber);
+    
+        int x = Arrays.asList(number).indexOf(sortNumber[n - 2]) + 1;
+
+        System.out.println(x);
         sc.close();
     }
 }
