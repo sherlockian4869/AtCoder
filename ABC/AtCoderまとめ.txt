@@ -34,4 +34,11 @@ do {
 https://www.javadrive.jp/start/ope/index8.html
 
 ----------------------------------------------------------------------------
+7,sortやindexOf()を配列で使いたいときの対応方法
+
+Integer[] array = new Integer[n];
+// index番号を格納
+int number = Arrays.asList(array).indexOf(値);
+
+----------------------------------------------------------------------------
 
