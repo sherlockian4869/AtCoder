@@ -3,18 +3,17 @@ public class B {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        float x = sc.nextFloat();
-        float result = 0;
+        int x = sc.nextInt()*100;
+        int result = 0;
 
-        float[][] list = new float[n][2];
+        int[] list = new int[n];
         
         for (int i = 0; i < list.length; i++) {
-            list[i][0] = sc.nextFloat();
-            list[i][1] = sc.nextFloat();
-
+            int v = sc.nextInt();
+            int p = sc.nextInt();
+            list[i] = v*p;
             // 計算
-            result += list[i][0] * list[i][1] / 100;
-            System.out.println(result);
+            result += list[i];
             if (x < result) {
                 System.out.println(i + 1);
                 break;
