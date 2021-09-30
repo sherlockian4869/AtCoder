@@ -35,3 +35,41 @@ do {
 
 ---
 
+##### 6,ビット演算子とシフト演算子
+
+https://www.javadrive.jp/start/ope/index8.html
+
+---
+
+##### 7,sortやindexOf()を配列で使いたい時の対応方法
+
+~~~ruby
+Integer[] array = new Integer[n];
+// index番号を格納
+int number = Arrays.asList(array).indexOf(値);
+~~~
+
+---
+
+##### 8,ネストしたfor文の中でbreak;したいとき
+
+~~~ruby
+myLoop: // ラベルを貼り
+for (int i = o, i < 10, i++) {
+    for (int j = 0, j < 10, j++) {
+        // 処理を書く
+        break myLoop; ←これで二つのfor文を抜ける
+    }
+}
+~~~
+
+---
+
+##### 9,配列の要素を比較
+
+~~~ruby
+Arrays.equals(配列1, 配列2);
+要素数・順番・値が一緒だったらtrueが返される。
+~~~
+
+---
