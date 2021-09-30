@@ -1,1 +1,1 @@
-# AtCoder ~Java~
+# AtCoder Java
