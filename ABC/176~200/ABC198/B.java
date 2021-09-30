@@ -1,25 +1,21 @@
-import java.util.Arrays;
 import java.util.Scanner;
-
 public class B {
     public static void main(String[] args) throws Exception {
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        long a = sc.nextLong();
 
-        int a = scan.nextInt();
-        String ans = "Yes";
-        int[] b = new int[a];
-        for (int i = 0; i < b.length; i++) {
-            b[i] = scan.nextInt();
+        while(a % 10 == 0 && a != 0) {
+            a /= 10;
         }
-        scan.close();
-        Arrays.sort(b);
-
+        String po = a + "";
+        char[] b = po.toCharArray();
+        boolean o = true;
         for (int i = 0; i < b.length; i++) {
-            if (!(b[i] == (i + 1))) {
-                ans = "No";
-                break;
+            if (b[i] != b[b.length - 1 - i]) {
+                o = false;
             }
         }
-        System.out.println(ans);
+        System.out.println(o ? "Yes" : "No");
+        sc.close();
     }
 }
