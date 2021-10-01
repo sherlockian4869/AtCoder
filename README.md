@@ -73,3 +73,12 @@ Arrays.equals(配列1, 配列2);
 ~~~
 
 ---
+
+##### 10,様々な進数から10進数に直す方法
+
+~~~ruby
+String strNumber = "進数";
+int intNumber = Integer.parseInt(strNumber, 進数)
+~~~
+
+---
