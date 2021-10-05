@@ -1,5 +1,8 @@
 # AtCoder調査まとめ
 
+####参考資料
+[java コード入門](https://java-code.jp/)
+
 ## 1,文字列を配列に入れる方法
 String word = "あいうえお";
 String[] wordList = word.split("");
